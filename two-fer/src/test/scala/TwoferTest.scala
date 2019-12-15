@@ -3,6 +3,7 @@ import org.scalatest.{Matchers, FunSuite}
 /** @version 1.2.0 */
 class TwoferTest extends FunSuite with Matchers {
 
+
   test("no name given") {
     Twofer.twofer() should be ("One for you, one for me.")
   }
