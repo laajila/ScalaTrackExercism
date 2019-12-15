@@ -114,3 +114,4 @@ project/project/build.properties
 **/.history
 **.cache
 **/.lib/
+.exercism
