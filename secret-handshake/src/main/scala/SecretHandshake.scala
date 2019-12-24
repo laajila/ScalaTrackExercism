@@ -11,14 +11,11 @@ object SecretHandshake {
     var result: List[String] = List()
     val binaryString = toBinaryRversed(x)
 
-
     if (Try(binaryString.charAt(0)) == Success('1')) result = result :+ "wink"
     if (Try(binaryString.charAt(1)) == Success('1')) result = result :+ "double blink"
     if (Try(binaryString.charAt(2)) == Success('1')) result = result :+ "close your eyes"
     if (Try(binaryString.charAt(3)) == Success('1')) result = result :+ "jump"
     if (Try(binaryString.charAt(4)) == Success('1')) result = result.reverse
-
-
     result
   }
 
