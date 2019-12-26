@@ -4,5 +4,4 @@ object FlattenArray {
     case i: List[_] => flatten(i)
     case e => List(e).filter(_!=null)
   }
-
 }
