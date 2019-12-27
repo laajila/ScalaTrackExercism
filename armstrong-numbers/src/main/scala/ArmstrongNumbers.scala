@@ -1,4 +1,4 @@
-import scala.math
+
 object ArmstrongNumbers {
 
   def isArmstrongNumber(n: Int): Boolean = {
