@@ -1,12 +1,9 @@
 case class Clock(hours: Int, minutes: Int) {
   def totalMunites = (hours % 24) * 60 + minutes
 
-
-
-
   def hm = totalMunites match {
-    case a if (a < 0 && totalMunites % 60 != 0) => (23 + (a / 60)%24, 60 + totalMunites % 60)
-    case a if (a < 0 ) => (24 + (a / 60), 0)
+    case a if (a < 0 && totalMunites % 60 != 0) => (23 + (a / 60) % 24, 60 + totalMunites % 60)
+    case a if (a < 0) => (24 + (a / 60), 0)
     case c => ((c / 60) % 24, c % 60)
   }
 
